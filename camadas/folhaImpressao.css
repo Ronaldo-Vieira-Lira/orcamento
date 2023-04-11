@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@page {
+    margin: 0rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: .5rem;
+    background-color: #000;
+    color: #FFFF;
+    padding: 1rem;
+    width: 100%;
+    -webkit-print-color-adjust: exact;
+}
+
+
+#rodapeTopo {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quebraLinha {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.quebraLinha span {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#nameData {
+    text-align: right;
+}
+
+table {
+    width: 90vw;
+    margin: auto;
+}
+
+#nameServicos {
+    width: 50%;
+    text-align: left;
+}
+
+thead tr {
+    position: relative;
+}
+
+thead th {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    font-weight: bolder;
+    background-color: #fff;
+    -webkit-print-color-adjust: exact;
+}
+
+thead th::before {
+    content: "";
+    width: 100%;
+    background: #000;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#nameServicos {
+    border-left: 2px solid #000;
+}
+
+#ultimo {
+    border-right: 2px solid #000;
+}
+
+thead th::after {
+    content: "";
+    width: 100%;
+    background: #000;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFFF;
+    color: #000;
+    -webkit-print-color-adjust: exact;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #000;
+    color: #fff;
+    -webkit-print-color-adjust: exact;
+}
+
+td {
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    
+}
+
+.alinhado {
+    text-align: center;
+}
+
+#caixaTotal {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#caixaTotal span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+#rodapeBottom {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+}
+
+#bottom {
+    border: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+    padding: 1rem 2rem;
+    -webkit-print-color-adjust: exact;
+}
+
+#pagamento {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#divButton {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 3rem;
+    width: 90vw;
+    margin: auto;
+}
+
+button {
+    width: 300px;
+    border-radius: 3px;
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    -webkit-print-color-adjust: exact;
+}
+
+@media print {
+    button {
+        display: none;
+    }
+}
