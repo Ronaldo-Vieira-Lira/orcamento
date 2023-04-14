@@ -52,6 +52,7 @@ header {
 }
 
 #nameData {
+    display: block;
     text-align: right;
 }
 
@@ -135,6 +136,7 @@ td {
     margin: auto;
     align-items: center;
     justify-content: flex-end;
+    gap: 1rem;
 }
 
 #caixaTotal span {

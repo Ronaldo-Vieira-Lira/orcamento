@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+}
+
+#caixaForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    border-left: 1px solid #02735E;
+    padding-left: 10rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: .3rem;
+    width: 100%;
+}
+
+input {
+    border: 2px solid #02735E;
+    border-radius: 4px;
+    outline: none;
+    padding: .8rem;
+    font-size: 1.2rem;
+    color: #FFF;
+    width: 100%;
+    background-color: transparent;
+}
+
+input[type="submit"] {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #ffff;
+    cursor: pointer;
+    background: #02735E;
+}

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Maneira de deixar a cor permanente na hora da impressão: -webkit-print-color-adjust: exact; */
 
+:root {
+    --principal: #02735E;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -42,14 +46,14 @@ h1::before {
     right: 0;
     left: 0;
     margin: auto;
-    background: #02735E;
+    background: var(--principal)
     position: absolute;
 }
 
 #btn-voltar {
     font-weight: 600;
     padding: 1.5rem;
-    color: #02735E;
+    color: var(--principal);
     display: block;
     background: #000;
     cursor: pointer;
@@ -97,7 +101,7 @@ button {
     padding: 1rem;
     font-weight: 600;
     font-size: 1.3rem;
-    border: 1px solid #02735E;
+    border: 1px solid var(--principal);
     border-radius: 3px;
     background-color: #fff;
     cursor: pointer;
@@ -125,7 +129,7 @@ caption::before {
     left: 0;
     margin: .5rem auto;
     position: absolute;
-    background: #02735E;
+    background: var(--principal);
 }
 
 th {
@@ -134,12 +138,12 @@ th {
     padding: .5rem;
     border: 1px solid #000;
     background-color: #fff;
-    color: #02735E;
+    color: var(--principal);
 }
 
 tr:nth-child(odd) {
-    background-color: #0D0D0D;
-    color: #fff; /* Define a cor de fundo para linhas ímpares */
+    background-color: #F4F4F4;
+    color: #000; /* Define a cor de fundo para linhas ímpares */
 }
   
 tr:nth-child(even) {
@@ -148,4 +152,8 @@ tr:nth-child(even) {
 
 td {
     padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: capitalize;
 }
