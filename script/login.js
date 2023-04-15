@@ -13,7 +13,7 @@ var mocadoPss = "123"
 document.getElementById("btn").addEventListener("click", () => {
     if(window.vLogin === mocadoUs && window.vPsw === mocadoPss) {
     }
-    window.location.href = "../router/index.html"
+    window.location.href = "../router/principal.html"
     
 })
 

@@ -1,5 +1,5 @@
 const voltarBtn = document.getElementById("btn-voltar").addEventListener('click', (e) => {
-    window.location.href = "../router/index.html";
+    window.location.href = "../router/principal.html";
 })
 
 const redirecionarBtn = document.getElementById("redirecionar").addEventListener('click', (e) => {
