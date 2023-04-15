@@ -39,7 +39,12 @@ var dia = dataAtual.getDate();
 var mes = dataAtual.getMonth() + 1; // Janeiro é 0
 var ano = dataAtual.getFullYear();
 var dataFormatada = dia + " - " + (mes < 9 ? "0" + mes: null)  + " - " + ano;
+var dataTitulo = dia + "-" + (mes < 9 ? "0" + mes: null)  + "-" + ano;
+
 document.getElementById("data").innerHTML = dataFormatada;
+
+document.getElementById("titulo").innerHTML = `Orçamento_${dataTitulo}`
+
 
 // Somador de valor total do orçamento
 let total = 0
