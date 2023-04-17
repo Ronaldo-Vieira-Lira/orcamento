@@ -7,8 +7,8 @@ document.getElementById("senha").addEventListener("blur", (e) => {
     console.log(window.vPsw)
 })
 
-var mocadoUs = "bss"
-var mocadoPss = "123"
+var mocadoUs = "bruno"
+var mocadoPss = "34826616"
 
 document.getElementById("btn").addEventListener("click", () => {
     if(window.vLogin === mocadoUs && window.vPsw === mocadoPss) {
