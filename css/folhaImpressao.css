@@ -164,12 +164,6 @@ td {
     -webkit-print-color-adjust: exact;
 }
 
-#pagamento {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
 #divButton {
     display: flex;
     justify-content: center;
